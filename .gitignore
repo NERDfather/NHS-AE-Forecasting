@@ -1,0 +1,13 @@
+# virtual environment and Python caches
+.venv/
+__pycache__/
+*.pyc
+
+# scratch output from the first look at the Excel file
+inspect_output.txt
+
+# editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

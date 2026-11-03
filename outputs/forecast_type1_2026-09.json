@@ -1,0 +1,32 @@
+{
+  "target_series": "England A&E attendances, Type 1 departments, monthly",
+  "data_source": "NHS England Monthly A&E Time Series (published 8 Oct 2026); Open Government Licence v3.0",
+  "data_last_month": "2026-09",
+  "latest_value": 1503149.0,
+  "generated_on": "2026-11-01",
+  "forecast_months": [
+    "2026-10",
+    "2026-11",
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04",
+    "2027-05",
+    "2027-06",
+    "2027-07",
+    "2027-08",
+    "2027-09"
+  ],
+  "method": "equal-weight average of ets_mul, sarima_masked, ridge_cx (rule declared in step 12)",
+  "intervals": "80% and 95%; empirical, from combo3's own past errors per horizon; error history excludes targets Mar 2020 - May 2022 (chosen after seeing step 11 results)",
+  "proof_step": "reproduced the backtest forecast for origin 2024-09 within 0.0001",
+  "sarima_converged": true,
+  "library_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.4.6",
+    "statsmodels": "0.15.0",
+    "sklearn": "1.9.1"
+  },
+  "scoring_note": "Score against actuals as NHS England publishes them (Oct 2026 data due 12 Nov 2026). Do not change this file after generation."
+}
